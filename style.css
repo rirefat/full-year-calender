@@ -1,6 +1,6 @@
-/********************************************************* 
-**********************Font Section********************** 
-*********************************************************/
+/******************************************************************** 
+******************************Font Section*************************** 
+********************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Luxurious+Roman&display=swap');
 *{
@@ -10,9 +10,9 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/******************************************************* 
-*******************Calender Section******************* 
-*******************************************************/
+/****************************************************************** 
+*************************Calender Section************************** 
+******************************************************************/
 body{
     background-color: #f1fbff;
 }
@@ -53,18 +53,37 @@ table.month td.day .day-content:hover{
     color:whitesmoke;
 }
 
-/* Holiday Section */
+/********************************************************************************************** 
+****************************************Holiday Section**************************************** 
+**********************************************************************************************/
 table.month td:last-child,
 table.month td:nth-child(6),
 table.month thead tr:nth-child(2) th:nth-child(6),
 table.month thead tr:nth-child(2) th:last-child{
-    color: red;
+    color: #ff7675;
     font-weight: 700;
 }
+.calendar .calendar-header{
+    border: none;
+}
+.calendar .calendar-header table th:hover{
+    background: transparent;
+}
+.calendar .calendar-header .year-title{
+    font-size: 4em;
+    font-family: 'Dancing Script', cursive;
+    color: #0984e3;
+}
+.calendar .calendar-header .year-neighbor{
+    font-size: 2.25em;
+}
+.calendar .calendar-header .year-neighbor2{
+    font-size: 1em;
+}
 
-/****************************************************** 
-********************Footer Section******************** 
-******************************************************/
+/******************************************************************************************* 
+***************************************Footer Section*************************************** 
+*******************************************************************************************/
 footer{
     text-align: center;
     margin: 30px 0;
@@ -73,7 +92,12 @@ footer{
     font-weight: 300;
     color: grey;
 }
-footer span{
+footer a{
+    text-decoration: none;
     font-weight: 700;
     color: midnightblue;
+}
+footer a:hover{
+    font-weight: 900;
+    color: rgb(129, 6, 63);
 }
